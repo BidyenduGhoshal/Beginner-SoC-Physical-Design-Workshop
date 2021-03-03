@@ -110,3 +110,126 @@ List of tools installed using vsdflow
 |OpenTimer and OpenSTA | Static timing analysis tool|
 
  For installing **ngspice** for windows or Mac OS, it is already available as a precompiled version [here](http://ngspice.sourceforge.net/download.html). For installing ngspice in linux environments, [Synaptic package manager](https://geek-university.com/linux/synaptic/) needs to be installed first. ngspice can then be installed using the package manager.
+
+## Lab Exercises
+### Exp 1:
+<br/>
+NOTE - If you are already inside Lab, then no need to do below steps
+
+Click on VSD IAT, Go to "Lab Instances". Then under "Links", click on the "link" icon. Click bottom left, System tools > LXTerminal.
+
+Now type the command "yosys". What do you see next?
+<br/>
+<p align="center">
+<img src="" 
+alt="alt text"  >
+<p/>
+<br/>
+### Exp 2:
+<br/>
+NOTE - If you are already inside Lab, then no need to do below steps
+
+Click on VSD IAT, Go to "Lab Instances". Then under "Links", click on the "link" icon. Click bottom left, System tools > LXTerminal.
+
+Type "which sta" and what path do you see the sta tool to be linked to?
+<br/>
+<p align="center">
+<img src="" 
+alt="alt text"  >
+<p/>
+<br/>
+### Exp 3:
+<br/>
+NOTE - If you are already inside Lab, then no need to do below steps
+
+Click on VSD IAT, Go to "Lab Instances". Then under "Links", click on the "link" icon. Click bottom left, System tools > LXTerminal.
+
+Type below command from current working directory
+
+git clone https://github.com/kunalg123/vsdflow.git
+What is the last line you see ?
+<br/>
+<p align="center">
+<img src="" 
+alt="alt text"  >
+<p/>
+<br/>
+### Exp 4:
+<br/>
+NOTE - If you are already inside Lab, then no need to do below steps
+
+Click on VSD IAT, Go to "Lab Instances". Then under "Links", click on the "link" icon. Click bottom left, System tools > LXTerminal.
+
+Type below commands:
+
+cd vsdflow
+./vsdflow spi_slave_design_details.csv
+ls -ltr outdir_spi_slave/
+Here you will see lot of files created.
+
+Now type below command
+
+ls -ltr outdir_spi_slave | wc
+This will give you 3 numbers in one row, where 1st number represents number of files
+
+What are the number of files you see?
+
+Hint - The keyword "total 320 which is the first line you see when you type "ls -ltr outdir_spi_slave" is NOT a file
+<br/>
+<p align="center">
+<img src="" 
+alt="alt text"  >
+<p/>
+<br/>
+### Exp 5:
+<br/>
+NOTE - If you are already inside Lab, then no need to do below steps
+
+Click on VSD IAT, Go to "Lab Instances". Then under "Links", click on the "link" icon. Click bottom left, System tools > LXTerminal.
+
+Type below commands
+
+cd outdir_spi_slave
+qflow display spi_slave
+It will open 2 windows "layout1" and "tkcon"
+
+On "tkcon" window, type "box".
+
+What is the output area in microns?
+<br/>
+<p align="center">
+<img src="" 
+alt="alt text"  >
+<p/>
+<br/>
+### Exp 6:
+<br/>
+NOTE - If you are already inside Lab, then no need to do below steps
+
+Click on VSD IAT, Go to "Lab Instances". Then under "Links", click on the "link" icon. Click bottom left, System tools > LXTerminal.
+
+Type below command
+
+cd
+cd vsdflow
+mkdir my_picorv32
+cd my_picorv32
+mkdir source synthesis layout
+cp ~/vsdflow/verilog/picorv32.v source/.
+qflow gui &
+Select below options in gui
+
+Technology = osu018
+Verilog source file : picorv32.v
+Verilog module : picorv32
+Click on Set Stop
+
+Then run labs till synthesis as shown in Labs Video
+
+What is the % ratio of flipflop/total logic ?
+<br/>
+<p align="center">
+<img src="" 
+alt="alt text"  >
+<p/>
+<br/>
