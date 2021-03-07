@@ -180,10 +180,10 @@ Click on VSD IAT, Go to "Lab Instances". Then under "Links", click on the "link"
 
 Type below commands:
 
-cd vsdflow
-./vsdflow spi_slave_design_details.csv
+'''cd vsdflow'''
+'''./vsdflow spi_slave_design_details.csv
 ls -ltr outdir_spi_slave/
-Here you will see lot of files created.
+Here you will see lot of files created.'''
 
 Now type below command
 
