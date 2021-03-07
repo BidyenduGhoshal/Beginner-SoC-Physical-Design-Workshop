@@ -48,7 +48,7 @@ alt="alt text" width = 553 height = 358  >
 <p/>
 
 ## Package Types ##
-Integrated circuits are put into protective packages to allow easy handling and assembly onto printed circuit boards and to protect the devices from damage. A very large number of different types of package exist. Through-hole packages, Surface mount, Chip carrier, Pin grid arrays, Flat packages and ball grid array are some of the most common packages. In this workshop we deal with a variant of Flat package called QFN-48 ( Quad Flat No leads with 48 pins)
+Integrated circuits are put into protective packages to allow easy handling and assembly onto printed circuit boards and to protect the devices from damage. A very large number of different types of package exist. Through-hole packages, Surface mount, Chip carrier, Pin grid arrays, Flat packages and ball grid array are some of the most common packages. In this workshop we deal with a variant of Flat package called QFN-48. ( Quad Flat No leads with 48 pins)
 <p align="center">
 <img src="https://github.com/BidyenduGhoshal/Beginner-SoC-Physical-Design-Warkshop/blob/main/Image/Day%201/TH2.png" 
 alt="alt text"  >
@@ -98,12 +98,12 @@ The second step in the physical design flow is floorplanning. Floorplanning is t
 Clock Tree Synthesis is a process which makes sure that the clock gets distributed evenly to all sequential elements in a design.
 The goal of CTS is to minimize the skew and latency. Clock Tree Synthesis also is done using [graywolf](https://github.com/rubund/graywolf) as a part of Qflow.
 ## Routing
-Routing is the next stage after clock tree synthesis which involves making connections as per the netlist generated earlier. This includes interconnections between standard cells, macros and the Pads present in the chip boundary. Routing is done with the help of an opensource tool called [Qrouter](http://opencircuitdesign.com/qrouter/)
+Routing is the next stage after clock tree synthesis which involves making connections as per the netlist generated earlier. This includes interconnections between standard cells, macros and the Pads present in the chip boundary. Routing is done with the help of an opensource tool called [Qrouter](http://opencircuitdesign.com/qrouter/).
 ## Static Timing Analysis
-Static Timing Analysis (STA) is one of the techniques to verify design in terms of timing.The STA will validate whether the design could operate at the rated clock frequency, without any timing violations. Some of the basic timing violations are setup violation and hold violation. STA is done using the help of [Opentimer](https://github.com/OpenTimer/OpenTimer)  
+Static Timing Analysis (STA) is one of the techniques to verify design in terms of timing.The STA will validate whether the design could operate at the rated clock frequency, without any timing violations. Some of the basic timing violations are setup violation and hold violation. STA is done using the help of [Opentimer](https://github.com/OpenTimer/OpenTimer).
 
 ## Layout Viewer
-[Magic](http://opencircuitdesign.com/magic/) is the open source tool used for viewing and creating physical layouts for circuits after SPICE simulation. After the completion of the layout, The tool also has a facility of extracting parasitics and other delays in SPICE format which can further be simulated using spice tools
+[Magic](http://opencircuitdesign.com/magic/) is the open source tool used for viewing and creating physical layouts for circuits after SPICE simulation. After the completion of the layout, The tool also has a facility of extracting parasitics and other delays in SPICE format which can further be simulated using spice tools.
 ## Pre-Layout and Post-Layout SPICE simulation
 [ngspice](http://ngspice.sourceforge.net/) the open source spice simulator for electric and electronic circuits. It is used to create a netlist, view waveforms and calculate a rough estimate of the timing parameters. It is used both in the pre-layout and the post-layout stages for running SPICE simulations.post-layout spice simulation is done after extracting the post layout spice file using magic layout viewer.
 
@@ -361,7 +361,7 @@ alt="alt text"  >
 
 <br/>
 <p align="center">
-<img src=https://github.com/BidyenduGhoshal/Beginner-SoC-Physical-Design-Warkshop/blob/main/Image/Day%202/L2.png"" 
+<img src="https://github.com/BidyenduGhoshal/Beginner-SoC-Physical-Design-Warkshop/blob/main/Image/Day%202/L2.png" 
 alt="alt text"  >
 <p/>
 <br/>
@@ -637,20 +637,6 @@ What is the area of this design?
 <br/>
 <p align="center">
 <img src="https://github.com/BidyenduGhoshal/Beginner-SoC-Physical-Design-Warkshop/blob/main/Image/Day%203/L9.png" 
-alt="alt text"  >
-<p/>
-<br/>
-
-### Exp 8:
-Perform all steps in D3SK3 - MCQ4
-
-Perform all steps in D3SK3 - Lesson 4 (We don't have Gnd, but we have 0. Please modify postlayout spice netlist accordingly)
-
-What is the value of X0 at intersection rising & falling waveform and intersection of horizontal blue line?
-
-<br/>
-<p align="center">
-<img src="https://github.com/BidyenduGhoshal/Beginner-SoC-Physical-Design-Warkshop/blob/main/Image/Day%203/L10.png" 
 alt="alt text"  >
 <p/>
 <br/>
