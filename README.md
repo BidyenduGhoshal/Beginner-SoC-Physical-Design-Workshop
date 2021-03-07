@@ -122,7 +122,9 @@ List of tools installed using vsdflow
  For installing **ngspice** for windows or Mac OS, it is already available as a precompiled version [here](http://ngspice.sourceforge.net/download.html). For installing ngspice in linux environments, [Synaptic package manager](https://geek-university.com/linux/synaptic/) needs to be installed first. ngspice can then be installed using the package manager.
 
 ## Lab Exercises
+
 ### Exp 1:
+
 <br/>
 NOTE - If you are already inside Lab, then no need to do below steps
 
@@ -135,7 +137,9 @@ Now type the command "yosys". What do you see next?
 alt="alt text"  >
 <p/>
 <br/>
+
 ### Exp 2:
+
 <br/>
 NOTE - If you are already inside Lab, then no need to do below steps
 
@@ -148,7 +152,9 @@ Type "which sta" and what path do you see the sta tool to be linked to?
 alt="alt text"  >
 <p/>
 <br/>
+
 ### Exp 3:
+
 <br/>
 NOTE - If you are already inside Lab, then no need to do below steps
 
@@ -164,7 +170,9 @@ What is the last line you see ?
 alt="alt text"  >
 <p/>
 <br/>
+
 ### Exp 4:
+
 <br/>
 NOTE - If you are already inside Lab, then no need to do below steps
 
@@ -191,7 +199,9 @@ Hint - The keyword "total 320 which is the first line you see when you type "ls 
 alt="alt text"  >
 <p/>
 <br/>
+
 ### Exp 5:
+
 <br/>
 NOTE - If you are already inside Lab, then no need to do below steps
 
@@ -212,7 +222,9 @@ What is the output area in microns?
 alt="alt text"  >
 <p/>
 <br/>
+
 ### Exp 6:
+
 <br/>
 NOTE - If you are already inside Lab, then no need to do below steps
 
